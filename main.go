@@ -20,9 +20,6 @@ func main() {
         log.Fatal("Failed to connect to database")
     }
 
-    // Migrasi database untuk model Todo
-    // db.AutoMigrate(&models.Todo{}) // Perbarui menjadi models.Todo
-
     // Setup routes
     routes.SetupRoutes(e, db)
 
